@@ -3,207 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staywithus | Unique Vacation Rentals in Wales</title>
+    <title>Staywithus | Wales</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-
         body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        .hero-gradient {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1528911222513-33e13460f7e8?auto=format&fit=crop&q=80&w=2000');
-            background-size: cover;
-            background-position: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
     </style>
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-white">
 
-    <nav class="sticky top-0 z-50 bg-white border-b border-gray-100 px-6 py-4 flex justify-between items-center">
-        <div class="text-rose-600 font-bold text-2xl tracking-tight flex items-center">
-            <i class="fa-solid fa-house-chimney-window mr-2"></i>Staywithus
-        </div>
-
-        <div class="hidden md:flex space-x-8 font-semibold text-sm">
-            <a href="#" class="hover:text-rose-600 transition">Stays</a>
-            <a href="#" class="hover:text-rose-600 transition">Experiences</a>
-            <a href="#" class="hover:text-rose-600 transition">Wales Guide</a>
-        </div>
-
-        <div class="flex items-center space-x-4 border border-gray-200 rounded-full py-2 px-4 shadow-sm hover:shadow-md cursor-pointer transition">
-            <i class="fa-solid fa-bars text-sm"></i>
-            <div class="bg-gray-400 text-white rounded-full w-8 h-8 flex items-center justify-center">
-                <i class="fa-solid fa-user text-xs"></i>
+    <header class="border-b border-gray-100 p-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="text-rose-600 font-bold text-xl">
+                <i class="fa-solid fa-house mr-1"></i> Staywithus
             </div>
-        </div>
-    </nav>
-
-    <header class="hero-gradient h-[550px] flex flex-col items-center justify-center text-center px-4">
-        <h1 class="text-white text-4xl md:text-7xl font-bold mb-6 drop-shadow-lg">Escape to Wales</h1>
-        <p class="text-white text-lg md:text-xl mb-10 font-light">Find your perfect cottage, cabin, or castle.</p>
-
-        <div class="bg-white rounded-full shadow-2xl p-2 flex flex-col md:flex-row items-center w-full max-w-3xl">
-            <div class="flex-1 px-8 py-3 text-left border-b md:border-b-0 md:border-r border-gray-100">
-                <p class="text-[10px] font-extrabold uppercase tracking-wider">Location</p>
-                <input type="text" placeholder="Where are you going?" class="text-sm outline-none w-full placeholder-gray-400">
+            <div class="space-x-4 text-sm font-medium">
+                <a href="#" class="text-gray-600 hover:text-black">Home</a>
+                <a href="#" class="text-gray-600 hover:text-black">Wales Guide</a>
+                <button class="bg-gray-100 px-4 py-2 rounded-full">Sign In</button>
             </div>
-            <div class="flex-1 px-8 py-3 text-left border-b md:border-b-0 md:border-r border-gray-100">
-                <p class="text-[10px] font-extrabold uppercase tracking-wider">Check in</p>
-                <p class="text-sm text-gray-400">Add dates</p>
-            </div>
-            <div class="flex-1 px-8 py-3 text-left">
-                <p class="text-[10px] font-extrabold uppercase tracking-wider">Who</p>
-                <p class="text-sm text-gray-400">Add guests</p>
-            </div>
-            <button class="bg-rose-600 text-white rounded-full h-12 w-12 md:h-14 md:w-14 flex items-center justify-center hover:bg-rose-700 transition transform active:scale-95">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-6 py-16">
-        <div class="flex justify-between items-end mb-10">
-            <div>
-                <h2 class="text-3xl font-bold">Featured stays in Wales</h2>
-                <p class="text-gray-500 mt-2">Explore the most-loved homes across the country</p>
-            </div>
-            <button class="hidden md:block text-sm font-semibold underline decoration-2 underline-offset-4">Show all</button>
+    <section class="py-12 px-4 text-center bg-gray-50">
+        <h1 class="text-3xl font-bold mb-6">Find a place to stay in Wales</h1>
+        <div class="max-w-2xl mx-auto bg-white border border-gray-300 rounded-full shadow-sm p-2 flex items-center">
+            <input type="text" placeholder="Search Snowdonia, Cardiff, or Tenby..." class="flex-grow px-4 outline-none text-sm">
+            <button class="bg-rose-600 text-white px-6 py-2 rounded-full font-bold text-sm">Search</button>
         </div>
+    </section>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="group cursor-pointer">
-                <div class="relative aspect-square overflow-hidden rounded-2xl mb-3 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1595111161205-090906232747?auto=format&fit=crop&q=80&w=800" class="object-cover w-full h-full group-hover:scale-105 transition duration-500">
-                    <button class="absolute top-4 right-4 text-white text-xl drop-shadow-md"><i class="fa-regular fa-heart"></i></button>
-                    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-tighter">Guest Favourite</div>
-                </div>
-                <div class="flex justify-between items-start">
-                    <div>
-                        <h3 class="font-bold text-[15px]">Snowdonia National Park</h3>
-                        <p class="text-gray-500 text-[14px]">Mountain hideaway with hot tub</p>
-                        <p class="text-[14px] mt-2"><span class="font-bold text-gray-900">£132</span> night</p>
-                    </div>
-                    <div class="flex items-center text-sm font-light">
-                        <i class="fa-solid fa-star text-[10px] mr-1"></i> 4.98
-                    </div>
+    <main class="max-w-6xl mx-auto px-4 py-10">
+        <h2 class="text-2xl font-bold mb-6">Top Wales Destinations</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div class="cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1595111161205-090906232747?auto=format&fit=crop&w=600" class="rounded-xl w-full h-64 object-cover">
+                <div class="mt-3">
+                    <h3 class="font-bold">Snowdonia (Eryri)</h3>
+                    <p class="text-gray-500 text-sm">National Park Views</p>
+                    <p class="text-sm font-bold mt-1">£110 / night</p>
                 </div>
             </div>
 
-            <div class="group cursor-pointer">
-                <div class="relative aspect-square overflow-hidden rounded-2xl mb-3 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?auto=format&fit=crop&q=80&w=800" class="object-cover w-full h-full group-hover:scale-105 transition duration-500">
-                    <button class="absolute top-4 right-4 text-white text-xl drop-shadow-md"><i class="fa-regular fa-heart"></i></button>
-                </div>
-                <div class="flex justify-between items-start">
-                    <div>
-                        <h3 class="font-bold text-[15px]">Tenby, Pembrokeshire</h3>
-                        <p class="text-gray-500 text-[14px]">Ocean view loft suite</p>
-                        <p class="text-[14px] mt-2"><span class="font-bold text-gray-900">£189</span> night</p>
-                    </div>
-                    <div class="flex items-center text-sm font-light">
-                        <i class="fa-solid fa-star text-[10px] mr-1"></i> 4.85
-                    </div>
+            <div class="cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?auto=format&fit=crop&w=600" class="rounded-xl w-full h-64 object-cover">
+                <div class="mt-3">
+                    <h3 class="font-bold">Tenby Coast</h3>
+                    <p class="text-gray-500 text-sm">Walk to the beach</p>
+                    <p class="text-sm font-bold mt-1">£140 / night</p>
                 </div>
             </div>
 
-            <div class="group cursor-pointer">
-                <div class="relative aspect-square overflow-hidden rounded-2xl mb-3 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1549826334-31995724597b?auto=format&fit=crop&q=80&w=800" class="object-cover w-full h-full group-hover:scale-105 transition duration-500">
-                    <button class="absolute top-4 right-4 text-white text-xl drop-shadow-md"><i class="fa-regular fa-heart"></i></button>
-                </div>
-                <div class="flex justify-between items-start">
-                    <div>
-                        <h3 class="font-bold text-[15px]">Brecon Beacons</h3>
-                        <p class="text-gray-500 text-[14px]">Converted barn under the stars</p>
-                        <p class="text-[14px] mt-2"><span class="font-bold text-gray-900">£115</span> night</p>
-                    </div>
-                    <div class="flex items-center text-sm font-light">
-                        <i class="fa-solid fa-star text-[10px] mr-1"></i> 4.92
-                    </div>
+            <div class="cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1549826334-31995724597b?auto=format&fit=crop&w=600" class="rounded-xl w-full h-64 object-cover">
+                <div class="mt-3">
+                    <h3 class="font-bold">Brecon Beacons</h3>
+                    <p class="text-gray-500 text-sm">Quiet mountain cottage</p>
+                    <p class="text-sm font-bold mt-1">£95 / night</p>
                 </div>
             </div>
 
-            <div class="group cursor-pointer">
-                <div class="relative aspect-square overflow-hidden rounded-2xl mb-3 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1605553556535-649033282b9b?auto=format&fit=crop&q=80&w=800" class="object-cover w-full h-full group-hover:scale-105 transition duration-500">
-                    <button class="absolute top-4 right-4 text-white text-xl drop-shadow-md"><i class="fa-regular fa-heart"></i></button>
-                </div>
-                <div class="flex justify-between items-start">
-                    <div>
-                        <h3 class="font-bold text-[15px]">Conwy</h3>
-                        <p class="text-gray-500 text-[14px]">Historic cottage near Castle</p>
-                        <p class="text-[14px] mt-2"><span class="font-bold text-gray-900">£104</span> night</p>
-                    </div>
-                    <div class="flex items-center text-sm font-light">
-                        <i class="fa-solid fa-star text-[10px] mr-1"></i> 4.79
-                    </div>
-                </div>
-            </div>
         </div>
     </main>
 
-    <footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-8 px-6">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-            <div>
-                <h4 class="font-bold text-sm mb-4">Staywithus Support</h4>
-                <ul class="text-sm space-y-3 text-gray-600">
-                    <li><a href="#" class="hover:underline">Help Centre</a></li>
-                    <li><a href="#" class="hover:underline">AirCover</a></li>
-                    <li><a href="#" class="hover:underline">Supporting people with disabilities</a></li>
-                    <li><a href="#" class="hover:underline">Report a concern</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold text-sm mb-4">Hosting</h4>
-                <ul class="text-sm space-y-3 text-gray-600">
-                    <li><a href="#" class="hover:underline">Host your home</a></li>
-                    <li><a href="#" class="hover:underline">Staywithus for Hosts</a></li>
-                    <li><a href="#" class="hover:underline">Hosting resources</a></li>
-                    <li><a href="#" class="hover:underline">Community forum</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold text-sm mb-4">Discover Wales</h4>
-                <ul class="text-sm space-y-3 text-gray-600">
-                    <li><a href="#" class="hover:underline">North Wales rentals</a></li>
-                    <li><a href="#" class="hover:underline">South Wales escapes</a></li>
-                    <li><a href="#" class="hover:underline">Coastal cottages</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold text-sm mb-4">About</h4>
-                <ul class="text-sm space-y-3 text-gray-600">
-                    <li><a href="#" class="hover:underline">Newsroom</a></li>
-                    <li><a href="#" class="hover:underline">Learn about new features</a></li>
-                    <li><a href="#" class="hover:underline">Careers</a></li>
-                    <li><a href="#" class="hover:underline">Investors</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
-            <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-4 md:mb-0">
-                <span>© 2026 Staywithus, Inc.</span>
-                <span class="hidden md:inline">·</span>
-                <a href="#" class="hover:underline">Privacy</a>
-                <span class="hidden md:inline">·</span>
-                <a href="#" class="hover:underline">Terms</a>
-                <span class="hidden md:inline">·</span>
-                <a href="#" class="hover:underline">Sitemap</a>
-                <span class="hidden md:inline">·</span>
-                <a href="#" class="hover:underline">UK Company Details</a>
-            </div>
-            <div class="flex items-center space-x-6 font-semibold">
-                <span class="flex items-center cursor-pointer"><i class="fa-solid fa-globe mr-2"></i> English (GB)</span>
-                <span class="cursor-pointer">£ GBP</span>
-                <div class="flex space-x-4">
-                    <i class="fa-brands fa-square-facebook text-xl cursor-pointer"></i>
-                    <i class="fa-brands fa-square-twitter text-xl cursor-pointer"></i>
-                    <i class="fa-brands fa-square-instagram text-xl cursor-pointer"></i>
-                </div>
-            </div>
+    <footer class="border-t border-gray-200 mt-10 py-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Staywithus Wales. All rights reserved.</p>
+        <div class="mt-2 space-x-4">
+            <a href="#" class="hover:underline">Privacy</a>
+            <a href="#" class="hover:underline">Terms</a>
+            <a href="#" class="hover:underline">Contact</a>
         </div>
     </footer>
 
